@@ -11,9 +11,8 @@ double f(double x)
  
 int main()
 {
-    double a, b, c,e;
-    a = 0;
-    cin>>b;
+    double a, b, c, e;
+    cin>>a>>b;
     cin>>e;
     while (b - a > e){
         c = (a + b) / 2;
