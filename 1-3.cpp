@@ -3,8 +3,6 @@
 #include <iostream>
 #include <stdio.h>
 
-#define e 0.001
-
 using namespace std;
 
 double f(double x){
