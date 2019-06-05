@@ -7,19 +7,25 @@ double f(double x){
 	return -x * x + 2 * sin(x);
 }
 
-int main(){
-	double a, b, c, e;
-	cout<<"Enter [a;b]"<<endl;
-	cin>>a>>b;
-	cout<<"Enter e"<<endl;
-	cin>>e;
-	while (b - a > e){
+double findRoots(double a, double b, double e)
+{
+	double c;
+	while (b - a >= e){
 		c = (a + b) / 2;
 		if(f(b) * f(c) < 0)
 			a = c;
 		else
 			b = c;
 	}
-	cout<<(a + b)/2<<endl;
+	return a+b/2;
+}
+
+int main(){
+	double a, b, e;
+	cout<<"Enter [a;b]"<<endl;
+	cin>>a>>b;
+	cout<<"Enter e"<<endl;
+	cin>>e;
+	cout<<"x = "<<findRoots(a,b,e);
 	return 0;
 }
