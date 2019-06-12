@@ -3,9 +3,6 @@
 
 using namespace std;
 
-#define EPSILON 1e-6
-
-
 double f(double x){
 	return -x * x + 2 * sin(x);
 }
