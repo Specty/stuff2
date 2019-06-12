@@ -12,9 +12,9 @@ double f1(double x) //тут мы выражаем Х
 	return 2 * sin(x) / x;
 }
 
-double df(doubel x){
+/*double df(double x){
 	return 2*cos(x)-2*x;
-}
+}*/
 
 double findRoots(double a, double b, double e, double x0){
 	double x1;
